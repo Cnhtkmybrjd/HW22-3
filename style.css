@@ -1,0 +1,99 @@
+/*Обнуление стилей браузера*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active { outline: none; }
+a:focus, a:active { outline: none; }
+nav, footer, head, aside { display: block; }
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea { font-family: inherit; }
+input::-ms-clear { display: none; }
+button { cursor: pointer; }
+button::-moz-focus-inner { padding: 0; border: 0; }
+a, a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+ul li { list-style: none; }
+img { vertical-align: top; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: 400; }
+
+/*стили страницы*/
+img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+h2 {
+    font-size: larger;
+    margin: 5px 0 0 5px;
+}
+body {
+    margin: 0 auto;
+}
+.container {
+    width: 1000px;
+}
+.my_boards {
+    background-color: #01a8a8;
+    min-height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+}
+.my_boards h1 {
+    color: white;
+    font-size: 28px;
+}
+.container_boards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    background-color: #04d2d2;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    width: 1000px;
+}
+.to_do_container, .test_container, .in_progress_container {
+    min-width: 300px;
+    max-width: 400px;
+    height: 700px;
+    background-color: #e0dfdf;
+    overflow-y: auto;
+
+}
+.to_do, .in_progress, .test {
+    background-color: #ece9e9;
+    padding: 10px;
+    margin: 10px;
+}
+.progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_progress {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.progress_p {
+    margin-right: 12px;
+}
+.goals, .clip, .message {
+    display: flex;
+}
